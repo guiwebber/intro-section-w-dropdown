@@ -100,6 +100,7 @@ html {
 #login {
   position: absolute;
   right: 20px;
+  top: 20px;
 }
 
 .register {
@@ -186,9 +187,17 @@ html {
   display: none;
 }
 @media (max-width: 475px) {
+  .imageTop  {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 35vh;
+    margin: auto;
+   background-image: url(../images/image-hero-mobile.png); 
+  }
   .imgMenu {
     display: flex;
-    width: 90%;
+    width: 90vw;
     justify-content: space-between;
     margin: 20px;
   }
@@ -204,10 +213,10 @@ html {
   }
   .imageTop {
     display: block;
+    width: 90vw;
   }
   .imageTop img {
-    width: 100%;
-    margin-top: 10px;
+    width: 100vw;
   }
   #main .contents #title {
     font-size: 2.5rem;
@@ -221,21 +230,136 @@ html {
     justify-content: space-evenly;
     align-items: center;
     height: 42vh;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     line-height: 25px;
-    margin-top: 30px;
+    margin: 5px auto;
   }
   #main .contents div {
     margin: 30px 0;
   }
-  .clients a img{
+  .clients a img {
     width: 70px;
   }
   #main .contents .clients {
     margin: 0px;
+    width: 100vw;
   }
   #imagemMenuClose {
     display: none;
+  }
+  #menuOpen {
+    display: none;
+    height: 100vh;
+    width: 70vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+  }
+
+  #menuOpen #imagemMenuClose {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  #menuMobile {
+    margin: 70px 20px;
+  }
+  #firstDropMobile,
+  #secondDropMobile {
+    display: block;
+    margin: 20px 0;
+  }
+  .defaultsBtns {
+    font-weight: 600;
+    margin: 20px 0;
+    display: block;
+  }
+
+  #firstDropMobile,
+  #secondDropMobile,
+  #loginMobile,
+  #registerMobile,
+  .defaultsBtns {
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+    border: none;
+    font-size: 1rem;
+  }
+  #loginMobile,
+  #registerMobile {
+    margin: 20px auto;
+    width: 200px;
+    display: block;
+    padding: 10px;
+  }
+  #loginMobile {
+    border: none;
+  }
+  #registerMobile {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  #myDropMobile a {
+    margin: 10px 25px;
+  }
+  #myDropMobile a img{
+    margin: 0px 15px 0 0;
+  }
+  #backdrop {
+    background-color: rgba(0, 0, 0, 0.679);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #dropMyMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  #dropMyMobile a{
+    margin: 10px 25px;
+  }
+}
+
+@media (max-width:375px) {
+   .imageTop  {
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35vh;
+   background-image: url(../images/image-hero-mobile.png); 
+  }
+   #main .contents #title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+   #main .contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 42vh;
+    width: 300px;
+    text-align: center;
+    line-height: 25px;
+    padding: 20px;
+  }
+   #main .contents .text {
+    margin: 0px;
+    width: 95vw;
+  }
+   #main .contents .clients a img{
+    width: 50px;
+    margin: 0;
   }
 }
