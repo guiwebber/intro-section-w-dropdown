@@ -27,12 +27,15 @@ dropButton.addEventListener("mouseover", () => {
 });
 
 //mobile
-let imagem = document.getElementById("imagem");
-console.log(imagem.src)
-imagem.addEventListener("click", () => {
-  if (imagem.src = "icon-menu.svg") {
-    imagem.src = "../assets/images/icon-close-menu.svg";
-  } else {
-    imagem.src = "../assets/images/icon-menu.svg";
-  }
-  });
+let imagemMenu = document.getElementById("imagemMenu");
+let imagemMenuClose = document.getElementById("imagemMenuClose");
+
+imagemMenu.addEventListener("click", () => {
+  imagemMenuClose.style.display = 'block';
+  imagemMenu.style.display = 'none'
+});
+
+imagemMenuClose.addEventListener('click', () => {
+  imagemMenu.style.display = 'block'
+  imagemMenuClose.style.display = 'none';
+})
