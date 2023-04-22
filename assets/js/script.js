@@ -30,7 +30,7 @@ dropButton.addEventListener("mouseover", () => {
 let imagem = document.getElementById("imagem");
 console.log(imagem.src)
 imagem.addEventListener("click", () => {
-  if (imagem.src === "http://127.0.0.1:5500/assets/images/icon-menu.svg") {
+  if (imagem.src = "icon-menu.svg") {
     imagem.src = "../assets/images/icon-close-menu.svg";
   } else {
     imagem.src = "../assets/images/icon-menu.svg";
